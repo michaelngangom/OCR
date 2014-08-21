@@ -1,0 +1,36 @@
+Setting up Tesseract and OpenCV for VS2008.
+1.	Download Tesseract from https://code.google.com/p/tesseract-ocr/downloads/list , you will need to download the following 
+a.	tesseract-ocr-setup-3.02.02.exe 
+b.	tesseract-ocr-3.02.02.tar.gz
+2.	Also download OpenCV from http://sourceforge.net/projects/opencvlibrary/files/ select the one for Window opencv-win
+3.	Click on the .exe file to install Tesseract. This will extract Tesseract API and necessary dll. Remember to check Tesseract Development files! Also, extract the OpenCV and keep it in a specified location.
+4.	Go to Tools-> options and add to the ‘includes’ as provided in the following screenshots.
+ 
+ 
+5.	Similarly do the same for Library files as well. Add the files as shown in the screenshots.
+ 
+ 
+6.	Now set up the Project for OpenCV and Tesseract.  Follow the below screenshots:
+ 
+ 
+
+
+
+ 
+These are the Libraries that needs to be added:
+libtesseract302.lib
+libtesseract302d.lib
+liblept168.lib
+liblept168d.lib
+opencv_features2d230d.lib
+opencv_highgui230d.lib
+opencv_core230d.lib
+opencv_imgproc230d.lib
+opencv_ml230d.lib
+opencv_objdetect230d.lib
+opencv_video230d.lib
+opencv_contrib230d.lib
+opencv_calib3d230d.lib
+
+You are done with the environment and project setup.
+Finally, you need to import the solution file.
